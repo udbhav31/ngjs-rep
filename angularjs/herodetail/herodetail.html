@@ -3,5 +3,8 @@
     <div>
         Name : {{hdc.hero.name}}
     </div>
-    <button ng-click="hdc.delete(hdc.hero)">delete</button>
+    <div>
+        location : <editablefield loc = hdc.hero.location editfield="hdc.update()"></editablefield>
+    </div>
+    <button ng-click="hdc.delete()">delete</button>
 </div>

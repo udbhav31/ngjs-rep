@@ -13,6 +13,9 @@ function herolistcontroller(){
             this.list.splice(idx,1);
         }
     }
+    this.updateHero = function(hero,prop,val){
+        
+    }
 }
 
 //angular.module("heroapp").controller("herolistcontroller", herolistcontroller);

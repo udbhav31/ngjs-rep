@@ -1,4 +1,5 @@
 <b>heros</b>
 <div>
-    <herodetail ng-repeat = "hero in hlc.list" hero="hero" delete = "hlc.deletehero(hero)"></herodetail>
+    <herodetail ng-repeat = "hero in hlc.list" hero="hero" on-delete = "hlc.deleteHero(hero)"
+    on-update= "hlc.updateHero(hero,prop,val)"></herodetail>
 </div>

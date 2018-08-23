@@ -1,5 +1,10 @@
 function herodetailcontroller(){
-
+    this.delete = function(){
+        this.onDelete(this.hero);
+    }
+    this.update = function(loc,prop){
+        this.onUpdate(this.hero,loc.prop);
+    }
 }
 
 angular.module("heroapp").component("herodetail",{
@@ -8,6 +13,7 @@ angular.module("heroapp").component("herodetail",{
     controllerAs : "hdc",
     bindings : {
         hero : "<",
-        delete : "&"
+        onDelete : "&",
+        onUpdate : "&"
     }
 })
