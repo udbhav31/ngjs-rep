@@ -1,0 +1,10 @@
+<hr>
+Parent Component
+<div>
+    primitive : {{parcon.prim}}
+</div>
+<div>
+    object : {{parcon.objct}}
+</div>
+<button ng-click="parcon.update()">change parent</button>
+<child-comp prim = "parcon.prim" objct = "parcon.objct"></child-comp>
