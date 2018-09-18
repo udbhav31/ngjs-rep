@@ -1,4 +1,4 @@
-var dataobj= {
+var baseobj= {
     name : "Udbhav Srivastava",
     mobile : "9739525551",
     location : "banglore",
@@ -6,4 +6,4 @@ var dataobj= {
 };
 
 
-angular.module("counterApp").value("data", dataobj);
+angular.module("counterApp").value("baseobj", baseobj);
